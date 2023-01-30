@@ -13,7 +13,7 @@ let options = {
     res.sendFile("/views/index.html", options);
 })
 app.post('/', (req, res) => {
-    console.log(req);
+    console.log(req.body);
     res.send('recibiendo datos')
     
 })
